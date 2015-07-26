@@ -1,0 +1,47 @@
+<%= provide(:title, "IT Knowledge Services") %>
+
+<div class="container marketing">
+    <div class="row">
+        <div class="col-lg-3">
+              
+              <%= link_to image_tag("services.png",  alt: "140x140", width:"140px", height:"140px"),
+            {:controller => 'pages', :action => 'home'},
+            {:class => 'img-circle'} %>
+              <h3>Accompagnement</h3>
+                                <p>Nous assistons nos clients à la réalisation des cahiers des charges pour leurs projets informatiques.</p>
+              <p><a class="btn btn-default" href="#" role="button">View details</a></p>
+        </div>
+
+        <div class="col-lg-3">
+              <%= link_to image_tag("online_support.png",  alt: "140x140", width:"140px", height:"140px"),
+            {:controller => 'pages', :action => 'home'},
+            {:class => 'img-circle'} %>
+              <h3>Integration</h3>
+                                <p>Nous mettons en place l'architecture qui répond aux besoins les plus pointus de nos clients.</p>
+              <p><a class="btn btn-default" href="#" role="button">View details</a></p>
+        </div>
+
+        <div class="col-lg-3">
+              <div class="img">
+                
+              <%= link_to image_tag("network.png",  alt: "140x140", width:"140px", height:"140px"),
+            {:controller => 'pages', :action => 'home'},
+            {:class => 'img-circle'} %>
+              </div>
+              <h3>Conseil</h3>
+                                <p>Nous apportons le meilleur des nouvelles technologies pour satisfaire les nouveaux défis de nos clients.</p>
+              <p><a class="btn btn-default" href="#" role="button">View details</a></p>
+        </div>
+         <div class="col-lg-3">
+              <div class="img">
+                
+              <%= link_to image_tag("lock.png",  alt: "140x140", width:"140px", height:"140px"),
+            {:controller => 'pages', :action => 'home'},
+            {:class => 'img-circle'} %>
+              </div>
+              <h3>Assistance</h3>
+                                <p>Nous sommes à l'écoute de nos clients pour résoudre leurs problèmes d'exploitation au quotidien.</p>
+              <p><a class="btn btn-default" href="#" role="button">View details</a></p>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+<!--
+<%= link_to image_tag("logoitknowledgesmall.png",  alt: "IT Knowledge Morocco Logo"),
+            {:controller => 'pages', :action => 'home'},
+            {:class => 'websiteLogo'} %>
+
+-->
+
+<div class="navbar-wrapper">
+        <div class="container">
+            <ul class="nav nav-pills pull-right">
+                <li><%= link_to "Home", :controller => "pages", :action => "home" %></li>
+                <li><%= link_to "Our Services", :controller => "pages", :action => "services" %></li>
+                <li><%= link_to "About Us", :controller => "pages", :action => "about" %></li>
+            </ul>
+            <ul>
+            	<li><%= link_to image_tag("logoitknowledgesmall.png",  alt: "IT Knowledge Morocco Logo"),
+            {:controller => 'pages', :action => 'home'} %></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active left">          
+          <%= image_tag("img3.png", alt: "First slide") %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="myfont">Example headline.</h1>
+              <p class="myfont">Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item next left">
+          <%= image_tag("img1.png", alt: "Second slide") %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="myfont">Another example headline.</h1>
+              <p class="myfont">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("img2.png", alt: "Third slide") %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="myfont">One more for good measure.</h1>
+              <p class="myfont">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+<center><div class="triangle">
+</div></center>   
+    </div>
+
+<%= yield %>
+
+
+<center><div class="triangle">
+</div></center>   
+    </div>
+
+<div class="footer">
+     <center><div class="trianglefooter">
+</div></center>
+     
+     
+     <center><a href="http://www.itknowledge.ma" style="width: 135px; height: 35px;"><div class="logoitk">
+     	<%= image_tag("logoitknowledgesmall.png",  alt: "IT Knowledge Morocco Logo", :class => 'logoitk') %>
+     </div></a></center>
+</div>
+
+
+</body>
+</html>
